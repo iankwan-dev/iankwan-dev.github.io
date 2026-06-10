@@ -27,12 +27,12 @@
         border-radius: 10px;
         box-shadow: 0 0 20px rgba(0,0,0,0.15);
       }
-    .test-container {
+    .scroll-container {
         display: flex;
         gap: 20px;
         justify-content: center;
       }
-    .test-card {
+    .profile-card {
         width: 400px;
         padding: 20px;
         background-color: #232323;
@@ -41,13 +41,23 @@
         border-radius: 20px;
         text-align: center;
         flex: 1;
+      }
+    .scroll-card {
+        width: 400px;
+        padding: 20px;
+        background-color: #232323;
+        color: white;
+        border: 3px solid #e25822;
+        border-radius: 20px;
+        text-align: center;
+        flex: 2;
         transition: transform 0.3s ease;
       }
-    .test-card:hover {
+    .scroll-card:hover {
         transform: translateY(-10px);
       }
 
-    .test-card img {
+    .scroll-card img {
         width: 100%;
         border-radius: 8px;
         max-width: 100px;
@@ -62,14 +72,14 @@
 
   <div class="page">
     <div class="test-container">
-      <div class="test-card">
+      <div class="profile-card">
           <h2>Education & Experience</h2>
           <img src="tennis_ball.jpg" alt="Education">
           <p>I am currently studying...</p>
           <p>Experience with HTML, CSS, and Python.</p>
       </div>
   
-      <div class="test-card">
+      <div class="scroll-card">
           <h2>Projects & Documentation</h2>
           <img src="tennis_ball.jpg" alt="Projects">
           <p>Personal website project.</p>
