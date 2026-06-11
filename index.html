@@ -61,7 +61,7 @@
         background-color: #000000;
         text-align: center;
       }
-    .work-container {
+    .works-container {
         display: flex;
         gap: 75px;
         justify-content: center;
@@ -73,7 +73,7 @@
         padding: 20px;
         background-color: white;
         color: black;
-        border: 3px solid #e25822;
+        border: 3px solid white;
         border-radius: 20px;
         text-align: center;
         flex: 1;
@@ -97,7 +97,7 @@
         margin-bottom: 20px;
         background-color: #232323;
         color: white;
-        border: 3px solid #e25822;
+        border: 3px solid #232323;
         border-radius: 20px;
         transition: transform 0.3s ease;
         align-items: center;
@@ -111,13 +111,46 @@
         text-align: center;
         color: white;
       }
-
     .scroll-card img {
         width: 100%;
         border-radius: 8px;
         max-width: 100px;
-        border-radius: 8px;
         object-fit: cover;
+      }
+    
+    .skills-holder-layer-1 {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+    .skills-holder-layer-2 {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+    .skills-holder-layer-3 {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+    .skill {
+        width: 120px;
+        padding: 20px;
+        margin-botton: 20px;
+        background-color: #232323;
+        color: white;
+        border: 3px solid #232323;
+        border-radius: 20px;
+        transition: transform 0.3s ease;
+        align-items: center;
+        display: flex;
+      }
+    .skill:hover {
+        transform: translateY(-10px);
+      }
+    .skill img {
+      max-width: 150px;
+      border-radius 8px;
       }
   </style>
 
@@ -179,7 +212,7 @@
           Information about me...
       </p>  
     
-      <div class="work-container">
+      <div class="works-container">
         <div class="profile-card">
             <img src="tennis_ball.jpg" alt="Education">
             <h2>Ian Kwan</h2>
@@ -233,6 +266,105 @@
 
   <section id="skills">
     <div class="content-2">
+      <div class="work-container">
+        <div class="profile-card">
+            <img src="tennis_ball.jpg" alt="Education">
+            <h2>Ian Kwan</h2>
+            <p>Class 2027: Cisco Student</p>
+            <p>Experience with HTML, IS-IS, OSPF, BGP, EIGRP, and Linux.</p>
+        </div>
+        <div class="scroll-column">
+          <div class="skills-holder-layer-1">
+            <div class="skill"></div>
+            <div class="skill"></div>
+            <div class="skill"></div>
+          </div>
+          <div class="skills-holder-layer-2">
+            <div class="skill"></div>
+            <div class="skill"></div>
+            <div class="skill"></div>
+          </div>
+          <div class="skills-holder-layer-3">
+            <div class="skill"></div>
+            <div class="skill"></div>
+            <div class="skill"></div>
+          </div>
+        </div>
+      </div>
+      <a href="#proficiency" class="scroll-button">
+            ↓
+      </a>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section id="proficiency"></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section id="goals"></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section id="connect"></section>
+
+
+
+
+
+
+
+
+
+
+
+  
       <body>
         <h2>Personal Statement</h2>
         <p>akshdajkdhjkahskdfs</p>
@@ -260,9 +392,5 @@
           Work 1
         </a>
       </body>
-    </div>
-  </section>
-
-
   
 </html>
