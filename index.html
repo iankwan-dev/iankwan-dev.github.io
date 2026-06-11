@@ -67,7 +67,7 @@
         justify-content: center;
       }
     
-    .profile-card {
+    .profile {
         max-width: 400px;
         max-height: 600px;
         padding: 20px;
@@ -79,20 +79,20 @@
         flex: 1;
         position: sticky;
       }
-    .profile-card img {
+    .profile img {
         width: 100%;
         border-radius: 8px;
         max-width: 200px;
         border-radius: 8px;
       }
-    .scroll-column {
+    .work-column {
         width: 400px;
         background-color: #000000;
         max-height: 80vh;
         overflow-y: auto;
         flex: 2;
       }
-    .scroll-card {
+    .work {
         padding: 20px;
         margin-bottom: 20px;
         background-color: #232323;
@@ -104,14 +104,14 @@
         display: flex;
         gap: 20px;
       }
-    .scroll-card:hover {
+    .work:hover {
         transform: translateY(-10px);
       }
-    .scroll-card-info {
+    .work-info {
         text-align: center;
         color: white;
       }
-    .scroll-card img {
+    .work img {
         width: 100%;
         border-radius: 8px;
         max-width: 100px;
@@ -135,6 +135,7 @@
       }
     .skill {
         width: 120px;
+        height: 180px;
         padding: 20px;
         margin-botton: 20px;
         background-color: #232323;
@@ -151,6 +152,14 @@
     .skill img {
       max-width: 150px;
       border-radius 8px;
+      }
+    .skill-column {
+        width: 400px;
+        height: 600px;
+        background-color: #000000;
+        max-height: 80vh;
+        overflow-y: auto;
+        flex: 2;
       }
   </style>
 
@@ -213,16 +222,16 @@
       </p>  
     
       <div class="type-1-container">
-        <div class="profile-card">
+        <div class="profile">
             <img src="tennis_ball.jpg" alt="Education">
             <h2>Ian Kwan</h2>
             <p>Class 2027: Cisco Student</p>
             <p>Experience with HTML, IS-IS, OSPF, BGP, EIGRP, and Linux.</p>
         </div>
     
-        <div class="scroll-column">
+        <div class="work-column">
           <p></p>
-          <div class="scroll-card">
+          <div class="work">
               <img src="tennis_ball.jpg" alt="Projects">
             <div class="scroll-card-info">
               <h2>Projects & Documentation</h2>
@@ -230,7 +239,7 @@
               <p>Programming documentation and tutorials.</p>
             </div>
           </div>
-          <div class="scroll-card">
+          <div class="work">
               <img src="tennis_ball.jpg" alt="Projects">
             <div class="scroll-card-info">
               <h2>Projects & Documentation</h2>
@@ -238,7 +247,7 @@
               <p>Programming documentation and tutorials.</p>
             </div>
           </div>
-          <div class="scroll-card">
+          <div class="work">
               <img src="tennis_ball.jpg" alt="Projects">
             <div class="scroll-card-info">
               <h2>Projects & Documentation</h2>
@@ -267,13 +276,13 @@
   <section id="skills">
     <div class="content-2">
       <div class="type-1-container">
-        <div class="profile-card">
+        <div class="profile">
             <img src="tennis_ball.jpg" alt="Education">
             <h2>Ian Kwan</h2>
             <p>Class 2027: Cisco Student</p>
             <p>Experience with HTML, IS-IS, OSPF, BGP, EIGRP, and Linux.</p>
         </div>
-        <div class="scroll-column">
+        <div class="skill-column">
           <div class="skills-holder-layer-1">
             <div class="skill"></div>
             <div class="skill"></div>
