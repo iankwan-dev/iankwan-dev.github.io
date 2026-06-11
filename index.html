@@ -4,6 +4,10 @@
     body {background: #000000; color: white; font-family: "Poppins", sans-serif;}
     h1 {color: white;}
     a {display: block; margin: 10px 0; color: white; text-decoration: none;}
+    html {
+        scroll-behavior: smooth;
+      }
+    
     .Work1-button {
         display: inline-block;
         background-color: green;
@@ -13,11 +17,24 @@
         transition: 0.3s;
         border-radius: 10px;
       }
-
     .Work1-button:hover {
         background-color: darkgreen;
         transform: scale(1.1);
       }
+    .scroll-button {
+        font-size: 40px;
+        text-decoration: none;
+        animation: bounce 1.5s infinite;
+      }
+    @keyframes bounce {
+        0%, 100% {
+            transform: translateY(0);
+          }
+        50% {
+            transform: translateY(10px);
+          }
+      }
+
     .page {
         max-width: 1150px;
         margin: 40px auto;
