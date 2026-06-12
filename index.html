@@ -215,6 +215,11 @@
         {opacity: 0.2;}
         50% {opacity: 1;}
       }
+    @keyframes float {
+        0% {transform: translateY(0);}
+        50% {transform: translateY(-5px);}
+        100% {transform: translateY(0);}
+      }
   </style>
 
 
@@ -222,7 +227,6 @@
 
   
 <script>
-
 const starsContainer =
     document.getElementById("stars");
 
@@ -254,6 +258,9 @@ for (let i = 0; i < 200; i++) {
     starsContainer.appendChild(star);
 }
 
+      star.style.animation =
+    `twinkle ${duration}s infinite,
+     float ${duration * 2}s ease-in-out infinite`;
 </script>
 
 
@@ -279,7 +286,9 @@ for (let i = 0; i < 200; i++) {
 
   
   <section class="start">
-    <div id="stars"></div>
+    <div id="stars">
+      
+    </div>
     <h1>Ian Kwan</h1>
 
     <p>
