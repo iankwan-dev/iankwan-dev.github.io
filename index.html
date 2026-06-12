@@ -225,46 +225,6 @@
 
 
 
-  
-<script>
-const starsContainer =
-    document.getElementById("stars");
-
-for (let i = 0; i < 200; i++) {
-
-    const star =
-        document.createElement("div");
-
-    star.classList.add("star");
-
-    const size =
-        Math.random() * 4 + 1;
-
-    star.style.width = size + "px";
-    star.style.height = size + "px";
-
-    star.style.left =
-        Math.random() * 100 + "%";
-
-    star.style.top =
-        Math.random() * 100 + "%";
-
-    const duration =
-        Math.random() * 4 + 2;
-
-    star.style.animation =
-        `twinkle ${duration}s infinite`;
-
-    starsContainer.appendChild(star);
-}
-
-      star.style.animation =
-    `twinkle ${duration}s infinite,
-     float ${duration * 2}s ease-in-out infinite`;
-</script>
-
-
-
 
 
 
@@ -286,8 +246,7 @@ for (let i = 0; i < 200; i++) {
 
   
   <section class="start">
-    <div id="stars">  
-    </div>
+    <div id="stars"></div>
     <h1>Ian Kwan</h1>
 
     <p>
@@ -578,5 +537,46 @@ for (let i = 0; i < 200; i++) {
           Work 1
         </a>
       </body>
+
+
+
+
+
+
+
+  <script>
+const starsContainer =
+    document.getElementById("stars");
+
+for (let i = 0; i < 200; i++) {
+
+    const star =
+        document.createElement("div");
+
+    star.classList.add("star");
+
+    const size =
+        Math.random() * 4 + 1;
+
+    star.style.width = size + "px";
+    star.style.height = size + "px";
+
+    star.style.left =
+        Math.random() * 100 + "%";
+
+    star.style.top =
+        Math.random() * 100 + "%";
+
+    const duration =
+        Math.random() * 4 + 2;
+
+    star.style.animation =
+        `twinkle ${duration}s infinite`;
+
+    starsContainer.appendChild(star);
   
+      star.style.animation =
+    `twinkle ${duration}s infinite,
+     float ${duration * 2}s ease-in-out infinite`;}
+  </script>
 </html>
