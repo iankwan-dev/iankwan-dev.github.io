@@ -229,6 +229,44 @@
         50% {transform: translateY(-5px);}
         100% {transform: translateY(0);}
       }
+    .timeline {
+        position: relative;
+        margin: 40px 0;
+        padding-left: 50px;
+      }
+        .timeline::before {
+        content: "";
+        position: absolute;
+        left: 15px;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        background: #e25822;
+        box-shadow:
+        0 0 10px white,
+        0 0 20px white;
+      }
+    .timeline-item {
+        position: relative;
+        margin-bottom: 60px;
+        padding: 20px;
+        background: #232323;
+        border-radius: 15px;
+      }
+    .timeline-item::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #e25822;
+        left: -45px;
+        top: 25px;
+        background: white;
+        background: white;
+        box-shadow:
+        0 0 10px white;
+      }
   </style>
 
 
@@ -457,7 +495,23 @@
 
   <section id="career">
     <div class="content-4">
-
+      <section id="timeline">
+        <h2>My Journey</h2>
+        <div class="timeline">
+        <div class="timeline-item">
+            <h3>2026</h3>
+            <p>Software Engineering Internship</p>
+        </div>
+        <div class="timeline-item">
+            <h3>2025</h3>
+            <p>Built Portfolio Website</p>
+        </div>
+        <div class="timeline-item">
+            <h3>2024</h3>
+            <p>Started Learning Python</p>
+        </div>
+      </div>
+    </section>
       <p></p>
       <a href="#connect" class="scroll-button">
             ↓
