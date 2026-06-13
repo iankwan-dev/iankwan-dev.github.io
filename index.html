@@ -267,6 +267,19 @@
         box-shadow:
         0 0 10px white;
       }
+    #contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+    #contact-form input,
+    #contact-form textarea {
+        padding: 12px;
+        border-radius: 10px;
+        border: 1px solid #444;
+        background: #232323;
+        color: white;
+      }
   </style>
 
 
@@ -447,47 +460,11 @@
         </div>
        </div>
       <P></P>
-      <a href="#proficiency" class="scroll-button">
+      <a href="#career" class="scroll-button">
             ↓
       </a>
     </div> 
   </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <section id="proficiency">
-    <div class="content-3">
-      
-      <p></p>
-      <a href="#career" class="scroll-button">
-            ↓
-      </a>
-    </div>
-  </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -528,20 +505,45 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
   <section id="connect">
     <div class="content-5">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+          <input
+              type="text"
+              id="name"
+              placeholder="Your Name"
+              required>
+          <input
+              type="email"
+              id="email"
+              placeholder="Your Email"
+              required>
+          <textarea
+              id="message"
+              placeholder="Your Message"
+              required>
+          </textarea>
+          <button type="submit">
+              Send Message
+          </button>
+      </form>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
       <h2>Contact Me</h2>
       <a href="mailto:iankwan67@gmail.com"
          class="button">
@@ -610,36 +612,39 @@
   <script>
 const starsContainer =
     document.getElementById("stars");
-
 for (let i = 0; i < 200; i++) {
-
     const star =
         document.createElement("div");
-
     star.classList.add("star");
-
     const size =
         Math.random() * 4 + 1;
-
     star.style.width = size + "px";
     star.style.height = size + "px";
-
     star.style.left =
         Math.random() * 100 + "%";
-
     star.style.top =
         Math.random() * 100 + "%";
-
     const duration =
         Math.random() * 4 + 2;
-
     star.style.animation =
         `twinkle ${duration}s infinite`;
-
     starsContainer.appendChild(star);
-  
       star.style.animation =
     `twinkle ${duration}s infinite,
      float ${duration * 2}s ease-in-out infinite`;}
   </script>
+  <script>
+    document
+    .getElementById("contact-form")
+    .addEventListener("submit", function(event){
+        event.preventDefault();
+        const name =
+            document.getElementById("name").value;
+        if (name === "") {
+            alert("Please enter your name.");
+            return;
+        }
+        alert("Message submitted!");
+    });
+</script>
 </html>
